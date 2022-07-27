@@ -6,7 +6,7 @@ const delay = promisify(setTimeout);
 
 (async() => {
   const LINES_PER_FRAME = 14;
-  const DELAY = 67;
+  const DELAY = 42;
   const filmData = (await readFileAsync(join(__dirname, 'sw.txt'), 'utf8')).split('\n');
   console.error('\n'.repeat(LINES_PER_FRAME));
   for(let i = 0; i < filmData.length; i += LINES_PER_FRAME) {
